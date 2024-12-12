@@ -40,7 +40,6 @@
     width: 80%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     justify-content: space-evenly;
@@ -163,16 +162,16 @@
 .Skill{
     width: 100%;
     background-color:#141328;
+    padding-bottom: 30px;
 }
 .skill-section{
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     min-height: 400px;
     margin: auto;
-    padding: 20px;
 }
 .subSkill{
     width: 80%;
@@ -213,7 +212,7 @@
 .subContact{
     background-color: whitesmoke;
     border: 1px solid gray;
-    padding: 10px 20px;
+    padding: 20px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,4 +257,31 @@
     font-size: 22px;
     color: black;
     
+}
+
+@media (max-width: 450px){
+    /* *{
+        background-color: aqua;
+    } */
+    .subIntro{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .Intro-text p{
+        text-align:center;    
+    }
+    .subAbout{
+        text-align: center;
+    }
+    .subSkill{
+        gap: 1rem;
+        width: 90%;
+    }
+    .skillBox{
+        width: 110px;
+        height: 110px;
+    }
+    .contact-form{
+        width: 280px;
+    }
 }
