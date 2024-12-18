@@ -130,32 +130,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 2rem;
-    min-height: 600px;
 }
-.swiper {
-    width: 90%;
-    height: 500px;
+.project-box{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
-.swiper-wrapper{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-}
-.swiper-slide{
-    border-radius: 10px;
-    overflow: hidden;
+.project-cart{
     width: 300px;
-    height: 100%;
-}
-.swiper-slide img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: gray;
 }
 /*  */
 /*  */
