@@ -92,8 +92,8 @@ section{
     color: black;
 }
 .projectIntro h1{
-    margin-bottom: 5px;
     font-weight: 300;
+    font-size: 30px;
 }
 .projectIntro span{
     color: crimson;
