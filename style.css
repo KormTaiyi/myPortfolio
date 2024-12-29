@@ -14,16 +14,7 @@ section{
     height: 80px;
     margin: 1rem auto;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 1rem;
     box-shadow: 5px 5px 10px #0000007a;
-}
-.Nav-item{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
 }
 .Nav-link{
     font-size: 20px;
