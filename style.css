@@ -21,6 +21,9 @@ section{
     color: black;
     padding: 5px 1rem;
 }
+.nav-item{
+    margin: 0.5rem 0;
+}
 .Nav-link:hover{
     color: gray;
     text-decoration: underline !important;
