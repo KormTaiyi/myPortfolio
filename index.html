@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="Navigation">
+        <ul class="Nav-item" type="none">
+            <li><a href="#home" class="Nav-link">Home</a></li>
+            <li>
+                <a href="#project" class="Nav-link">Projects</a>
+            </li>
+            <li><a href="#about" class="Nav-link">About me</a></li>
+            <li><a href="#contact" class="Nav-link">Contact me</a></li>
+        </ul>
+    </section>
+    <section class="Intro" id="home">
+
+    </section>
+    <section class="aboutMe" id="about">
+
+    </section>
+    <section class="myProject" id="project">
+        <a href="https://resturant-ashy.vercel.app/" target="blank" class="projectCart">
+            <img src="" alt="">
+            <div class="projectIntro">
+                <h1>Resturant</h1>
+                <span>HTML, CSS , ReactJS</span>
+            </div>
+        </a>
+        <a href="https://e-shop-nu-five.vercel.app/" target="blank" class="projectCart">
+            <img src="" alt="">
+            <div class="projectIntro">
+                <h1>Electronic-Shop</h1>
+                <span>HTML, CSS , Tailwind , ReactJS</span>
+            </div>
+        </a>
+    </section>
+    <section class="contactMe" id="contact">
+        <h1>If you have any concerns, please feel free to ask.</h1>
+        <form action="" class="contactForm">
+            <label for="">Email</label>
+            <input type="email" required><br>
+            <label for="">Full name</label>
+            <input type="text" required>
+            <br>
+            <textarea name="" id=""placeholder="Messages"></textarea>
+        </form>
+        <button id="contactBtn">Send Message</button>
+        <div class="contact-icon">
+            <a href="https://www.facebook.com/korm.taiyi.5" target="blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://github.com/KormTaiyi/resturant" target="blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+    <footer class="Footer">
+        <p>@copyright</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const ContactBtn = document.getElementById('contactBtn').onclick=()=>{
+            alert('Messages sended')
+        }
+    </script>
+</body>
+</html>
