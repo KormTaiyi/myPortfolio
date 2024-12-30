@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none !important; 
     scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 section{
     margin-bottom: 1rem;
@@ -31,7 +32,34 @@ section{
 /*  */
 .Intro{
     width: 100%;
-    height: 100vh;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+.Intro-text{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 50%;
+}
+.Intro-text span{
+    color: crimson;
+}
+.Intro-img{
+    width: 350px;
+    height: 400px;
+    background-color: bisque;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.Intro-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -42,7 +70,23 @@ section{
 /*  */
 .aboutMe{
     width: 100%;
-    height: 100vh;
+}
+.about{
+    width: 80%;
+    margin: auto;
+}
+.about p{
+    font-size: 16px;
+    padding: 2rem 0;
+}
+.mySkills{
+    width: 90%;
+    margin: auto;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
@@ -99,8 +143,6 @@ section{
     color: crimson;
     font-size: 18px;
 }
-
-
 
 /*  */
 .contactMe{
@@ -180,7 +222,11 @@ section{
 
 
 
-@media(max-width: 500px){
+@media(max-width: 640px){
+    .Intro-img{
+        width: 300px;
+        height: 350px;
+    }
     .contactMe{
         gap: 1rem;
         padding: 2rem 0;
@@ -193,5 +239,16 @@ section{
     }
     .contact-icon i{
         font-size: 22px;
+    }
+}
+@media(max-width: 767px){
+    .Intro{
+        flex-direction: column;
+    }
+    .Intro-text{
+        width: 80%;
+    }
+    .Intro-text p{
+        text-align: center;
     }
 }
