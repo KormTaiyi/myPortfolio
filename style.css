@@ -50,8 +50,8 @@ section{
     color: crimson;
 }
 .Intro-img{
-    width: 350px;
-    height: 400px;
+    width: 320px;
+    height: 380px;
     background-color: bisque;
     border-radius: 30px;
     overflow: hidden;
@@ -153,6 +153,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    padding: 2rem;
 }
 .contactMe h1{
     font-size: 45px;
@@ -221,11 +222,30 @@ section{
 }
 
 
-
-@media(max-width: 640px){
+@media(max-width: 767px){
+    .Intro{
+        flex-direction: column;
+    }
+    .Intro-text{
+        width: 80%;
+    }
     .Intro-img{
         width: 300px;
-        height: 350px;
+        height: 330px;
+        border-radius: 15px;
+    }
+    .myProject{
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 640px){
+    .Intro-text{
+        width: 100%;
+    }
+    .Intro-img{
+        width: 250px;
+        height: 300px;
     }
     .contactMe{
         gap: 1rem;
@@ -239,16 +259,5 @@ section{
     }
     .contact-icon i{
         font-size: 22px;
-    }
-}
-@media(max-width: 767px){
-    .Intro{
-        flex-direction: column;
-    }
-    .Intro-text{
-        width: 80%;
-    }
-    .Intro-text p{
-        text-align: center;
     }
 }
