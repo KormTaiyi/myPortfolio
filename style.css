@@ -6,13 +6,18 @@
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
 }
+.hidden {
+  opacity:0;
+}
+.console-underscore {
+   display:inline-block;
+}
 section{
     background-color: gainsboro;
     margin: 1rem 0;
 }
 .Navigation {
     width: 100%;
-    /* margin: 1rem 0; */
     padding: 0 2rem;
     background-color: whitesmoke;
     height: 80px;
@@ -121,7 +126,7 @@ section{
 }
 .projectCart{
     width: 320px;
-    min-height: 32  0px;
+    min-height: 320px;
     border-radius: 8px;
     background-color: white;
     transition-duration: 0.5s;
@@ -133,7 +138,7 @@ section{
     transition-duration: 0.5s;
 }
 .projectCart:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition-duration: 1s;
 }
 .projectCart img{
@@ -150,11 +155,12 @@ section{
 }
 .projectIntro h1{
     font-weight: 300;
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 10px;
 }
 .projectIntro span{
     color: crimson;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*  */
@@ -176,13 +182,14 @@ section{
 .contactForm{
     width: 450px;
     border: 1px solid gray;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 .contactForm input{
     height: 40px;
     padding: 5px;
+    font-size: 16px;
 }
 .contactForm textarea{
     height: 100px;
